@@ -511,7 +511,7 @@ of each drug container to estimate the degradation of the drug.
             </div>
           </div>
 
-          <div class="col s12 m6 l4">
+          <!--div class="col s12 m6 l4">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
                 <img alt="Ray Tracing" src="/assets/img/UE_RayTract.jpg" style="height: 100%; width: 100%" class="activator" />
@@ -524,17 +524,17 @@ of each drug container to estimate the degradation of the drug.
                 </p>
               </div>
               <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
+                <TODO: change this -- only close button>
+                <<span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> >
                 <span class="card-title grey-text"><small>Accomplishments</small><i
                     class="mdi-navigation-close right"></i></span>
                 <ul>
-                  <li><b>Tools:</b> C/C++, Eigen Library, NumPy</li>
+                  <li><b>Tools:</b>C/C++, Eigen Library, NumPy</li>
                   <li>Simulated different environments with different angles of lighting</li>
                   <li>Ray tracing shown through renders</li>
 
                 </ul>
-                <!--div class="card-action">
+                <div class="card-action">
                   <a aria-label="Visit " href="https://quiz-up-app.herokuapp.com/" target="_blank" data-position="top"
                     data-tooltip="View Online"
                     class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
@@ -543,10 +543,11 @@ of each drug container to estimate the degradation of the drug.
                     target="_blank" data-position="top" data-tooltip="View Source"
                     class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
                       class="fa fa-github"></i></a>
-                </div-->
+                </div>
               </div>
-            </div>
+            </div-->
           </div>
+
           <div id="row-start">
           </div>
           <div class="col s12 m6 l4">
@@ -1119,10 +1120,19 @@ of each drug container to estimate the degradation of the drug.
     about:["Developed a Sokoban Solver using Python. Used A* search algorithm to solve the game."],
     github:"https://github.com/nidal567/CSC384-Intro-to_AI/tree/main/A1%20Sokoban",
     date: Date.parse('02 Apr 2024')
+    },
+    {
+    title: "Ray Tracing Project",
+    img_path:"/assets/img/UE_RayTract.jpg",
+    descript:"Developed a ray tracing program in C++ using the Eigen library for vector computations.",
+    tools:"C/C++, Eigen Library, NumPy",
+    about:["Simulated different environments with different angles of lighting. Ray tracing shown through renders"],
+    github:"https://github.com/nidal567/CSC317-Computer-Graphics/tree/main/CSC317-Ray-Tracing",
+    date: Date.parse('03 Apr 2024')
     }
     ];
 
-    //sort by chronological
+    //sort by chronological. Advice from previous student in other PRA (DON'T HARDCODE DATES)
     proj_objs.sort((a, b) => a.date - b.date);
 
     //dynamically load the latest project
