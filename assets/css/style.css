@@ -11,7 +11,7 @@
   /* background-size: cover;  */
   margin: -31px; 
   margin-left:-7px;
-  border: 6px solid rgb(0, 121, 201); 
+  border: 6px solid rgba(0, 77, 64, 0.4); 
   border-radius: 50% !important;
 }
 
@@ -55,7 +55,7 @@
 }
 
 .linkedin {
-  color: #00111a;
+  color: #0077b5;
 }
 
 .angellist {
@@ -64,11 +64,11 @@
 
 .icon-btn:hover {
   transform: scale(1.10);
-  color: rgb(255, 255, 255);
+  color: #FFFFFF;
 }
 
 .linkedin:hover {
-  background-color: rgb(0, 119, 181);
+  background-color: #0077b5;
 }
 
 .angellist:hover {
@@ -85,7 +85,7 @@
   position: relative;
   padding: 11px 35px;
   background: #fff;
-  color: #0079c9;
+  color: #005579;
   border: 2px solid #fff;
   font-weight: 600;
   font-size: 15px;
@@ -116,7 +116,7 @@
 }
 
 .contactme:hover{
-  color: rgb(0, 121, 107);
+  color: #004579;
   background-color: white;
 }
 /* main body */
@@ -124,7 +124,7 @@
 /* body-color */
 
 body {
-  color: rgb(0, 121, 201);
+  color: #333;
   font-size: 18px;
 }
 
@@ -140,7 +140,7 @@ body {
 } */
 
 a {
-  color: rgb(0, 121, 201);
+  color: #003964;
 }
 
 /* main blockqoute */
@@ -155,8 +155,8 @@ a {
 } */
 
 blockquote {
-  border-left: 5px solid rgb(121, 85, 72);
-  color: rgb(121, 85, 72);
+  border-left: 5px solid #795548;
+  color: #795548;
   font-size: 125%;
   font-weight: 400;
   margin: 20px 0;
@@ -237,7 +237,7 @@ ul.side-nav li {
 
 ul.side-nav.fixed a {
   box-sizing: content-box;
-  color: rgb(16, 202, 56);
+  color: rgb(16, 202, 190);
   display: block;
   line-height: 100%;
   padding: 10px 0 12px;
@@ -257,8 +257,8 @@ ul.table-of-contents li.logo a.active, ul.table-of-contents li.logo a:hover {
 } */
 
 ul.side-nav.fixed li.logo {
-  background-color: rgb(250, 250, 250);
-  border-bottom: 1px solid rgb(221, 221, 221);
+  background-color: #fafafa;
+  border-bottom: 1px solid #ddd;
   box-sizing: content-box;
   min-height: 90px;
   padding: 30px 30px 40px;
@@ -270,12 +270,12 @@ ul.side-nav.fixed li.logo a {
 }
 
 ul.table-of-contents li:not(.logo) a.active, ul.table-of-contents li:not(.logo) a:hover {
-  background-color: rgb(250, 250, 250);
+  background-color: #fafafa;
   border-left: 3px solid;
 }
 
 ul.side-nav.fixed.table-of-contents li:not(.logo) a span, ul#slide-out li:not(.logo) a span {
-  color: rgb(51, 51, 51) !important;
+  color: #333 !important;
 }
 
 li.logo span {
@@ -320,7 +320,7 @@ h3 {
 } */
 
 #intro.section {
-  background: rgb(0, 31, 51) repeat;
+  background: #a7ecff repeat;
   position: relative;
 }
 
@@ -348,7 +348,7 @@ h3 {
 }
 
 #intro.section .underline {
-  border-bottom: 5px solid rgb(36, 48, 94);
+  border-bottom: 5px solid #24305e;
 }
 
 #intro.section .teal {
@@ -367,7 +367,7 @@ h3 {
 .waves-effect.waves-blue .waves-ripple {
   /* The alpha value allows the text and background color
    of the button to still show through. */
-  background-color: rgb(0, 139, 194);
+  background-color: rgba(33, 150, 243, 0.2);
 }
 
 .card {
@@ -384,7 +384,7 @@ h3 {
 .card li a {
   margin-right: 0;
   color: #333;
-  border-bottom: 2px solid rgb(255, 171, 64);
+  border-bottom: 2px solid #ffab40;
 }
 
 .card li a:hover {
@@ -428,7 +428,7 @@ h3 {
 
 .card-action span {
   font-size: 85%;
-  color: rgb(102, 102, 102);
+  color: #666;
 }
 
 .card ul {
@@ -442,7 +442,7 @@ h3 {
 }
 
 .card ul li li {
-  color: rgb(102, 102, 102);
+  color: #666;
   font-size: 13px;
 }
 
@@ -473,7 +473,7 @@ a.hoverline {
 } */
 
 a.hoverline:hover {
-  border-bottom: 3px solid rgb(0, 77, 64) !important;
+  border-bottom: 3px solid #004d40 !important;
 }
 
 #skills .card.large {
@@ -502,7 +502,7 @@ a.hoverline:hover {
 }
 
 #experience .card-content .row {
-  border-bottom: 1px solid rgb(221, 221, 221);
+  border-bottom: 1px solid #ddd;
   padding-bottom: 10px;
 }
 
@@ -543,13 +543,13 @@ small {
 }
 
 .grey-text {
-  color: rgb(157, 157, 157) !important;
+  color: #666 !important;
 }
 
 /* main .teal-text */
 
 .teal-text {
-  color: rgb(0, 0, 0) !important;
+  color: #003780 !important;
 }
 
 /* .teal-text {
@@ -559,7 +559,7 @@ small {
 /* .teal */
 
 .teal {
-  background-color: #0079c9 !important;
+  background-color: #005e80 !important;
 }
 
 /* .teal {
@@ -602,7 +602,7 @@ small {
     position: absolute;
   }
   nav a.button-collapse, nav a.button-collapse i {
-    color: rgb(0, 150, 136);
+    color: #005c96;
     height: 56px;
     line-height: 56px;
   }
