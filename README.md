@@ -3,7 +3,11 @@ Student #: 1005737543
 
 this repo is a clone of https://github.com/varadbhogayata/varadbhogayata.github.io
 
+Activity 1 showing proof of github repo:
+
 ![Image_activity1](https://github.com/user-attachments/assets/08cc7ae5-af98-4b59-abc9-a66193db4ad8)
+
+Activity 2 showing completion of profile through the following photos:
 
 ![alt text](examples/A2-1.png)
 
@@ -25,7 +29,7 @@ this repo is a clone of https://github.com/varadbhogayata/varadbhogayata.github.
 
 ![alt text](examples/A2-10.png)
 
-
+Activity three, different colour theme shown in the following photos:
 
 # Personal Portfolio ⚡️ 
 > A clean, beautiful, responsive portfolio template for Software Developers!
