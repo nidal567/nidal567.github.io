@@ -5,7 +5,25 @@ this repo is a clone of https://github.com/varadbhogayata/varadbhogayata.github.
 
 ![Image_activity1](https://github.com/user-attachments/assets/08cc7ae5-af98-4b59-abc9-a66193db4ad8)
 
+![alt text](examples/A2-1.png)
 
+![alt text](examples/A2-2.png)
+
+![alt text](examples/A2-3.png)
+
+![alt text](examples/A2-4.png)
+
+![alt text](examples/A2-5.png)
+
+![alt text](examples/A2-6.png)
+
+![alt text](examples/A2-7.png)
+
+![alt text](examples/A2-8.png)
+
+![alt text](examples/A2-9.png)
+
+![alt text](examples/A2-10.png)
 
 
 
