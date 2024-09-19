@@ -31,6 +31,14 @@ Activity 2 showing completion of profile through the following photos:
 
 Activity three, different colour theme shown in the following photos:
 
+![alt text](examples/A3-1.png)
+
+![alt text](examples/A3-2.png)
+
+Activity four, Google maps for places I've travelled:
+
+![alt text](examples/A4-1.png)
+
 # Personal Portfolio ⚡️ 
 > A clean, beautiful, responsive portfolio template for Software Developers!
 
