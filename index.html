@@ -547,7 +547,13 @@ of each drug container to estimate the degradation of the drug.
               </div>
             </div>
           </div>
-
+          <div id="row-start">
+          </div>
+          <div class="col s12 m6 l4">
+            <div style="margin-top: 50%;margin-bottom: 0%;margin-left: 7%;">
+              <button class="waves-effect waves-light btn blue darken-3" id="load-more-btn">Load more projects</button>
+            </div>
+          </div>
           <!-- 1. Django Project -->
           <!-- <div class="col s12 m6 l6">
             <div class="card medium">
@@ -1046,7 +1052,102 @@ of each drug container to estimate the degradation of the drug.
         closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
       })
     })
-  </script>
-</body>
+  
+    //Array of projects
+    //TO DO: change the array so that it has more than 1 projects
+    // make a function that returns the html string instead of hard coding
+    function html_string(object){
+    var string = `<div class="col s12 m6 l4">
+                    <div class="card medium">
+                      <div class="card-image waves-effect waves-block waves-light">
+                        <img alt="`;
+    string += object.title;
+    string += `" src="`;
+    string += object.img_path;
+    string += `" style="height: 100%; width: 100%" class="activator" />
+                      </div>
+                      <div class="card-content">
+                        <span class="card-title activator teal-text hoverline">`;
+    string += object.title;
+    string += `<i class="mdi-navigation-more-vert right"></i></span>
+                        <p>`;
+    string += object.descript;
+    string += `</p>
+                      </div>
+                      <div class="card-reveal">
+                        <span class="card-title grey-text"><small>Accomplishments</small><i class="mdi-navigation-close right"></i></span>
+                        <ul>
+                          <li><b>Tools:</b>`;
+    string+= object.tools;
+    string +=`</li>`;
 
+    for(i=0; i<object.about.length;i++){
+      string += `<li>`;
+      string += object.about[i];
+      string += `</li>`;
+    }
+
+    string += `</ul>
+                <div class="card-action">
+                  <a aria-label="Visit the GitHub repo for  project" href="`;
+    string += object.github;
+    string += `"
+                    target="_blank" data-position="top" data-tooltip="View Source"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>`;
+
+    return string;
+    }
+
+    var proj_objs = [{
+    title: "Seam Carving",
+    img_path:"/assets/img/Seam-Carve.jpg",
+    descript:"Seam Carving Algorithm to resize images without distortion.",
+    tools:"Python",
+    about:["Developed a Seam Carving algorithm using C"],
+    github:"https://github.com/nidal567/ESC190-seam-carving",
+    date: Date.parse('09 Apr 2021')
+    },
+    {
+    title: "Sokoban Solver",
+    img_path:"/Users/nidaldanial/Downloads/Final Year/Sem 1/ECE444/Practicals/PRA1/nidal567.github.io/assets/img/sokoban.png",
+    descript:"Using python and algorithms to solve sokoban.",
+    tools:"Python",
+    about:["Developed a Sokoban Solver using Python. Used A* search algorithm to solve the game."],
+    github:"https://github.com/nidal567/CSC384-Intro-to_AI/tree/main/A1%20Sokoban",
+    date: Date.parse('02 Apr 2024')
+    }
+    ];
+
+    //sort by chronological
+    proj_objs.sort((a, b) => a.date - b.date);
+
+    //dynamically load the latest project
+    $(document).ready(function(){
+      var project_string = html_string(proj_objs.pop());
+      $(project_string).appendTo(document.getElementById("row-start"));
+    });
+    
+    //Load more projects button functionality
+    const myButton = document.getElementById('load-more-btn');
+    myButton.addEventListener("click",function(){
+      //add the project
+      var more_proj = document.getElementById("row-start");
+      //for(i=0;i<projects.length;i++){
+      while(proj_objs.length>0){
+        var project_string = html_string(proj_objs.pop());
+        $(project_string).appendTo(more_proj);
+      }
+      //}
+
+      //remove the button
+      if(proj_objs.length == 0){
+        myButton.remove();
+      }
+    });
+    </script>
+  </body>
 </html>
